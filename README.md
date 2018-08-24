@@ -21,6 +21,8 @@ Running
 ./run.sh DEBOS_PARAMETERS
 ```
 
+> Visit [debos repo](https://github.com/go-debos/debos) for tool usage
+
 For easy access from any directory:
 
 ```
