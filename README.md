@@ -1,6 +1,24 @@
 Prerequisites
 -------------
 
+* enabled virtualization:
+
+  - check if you have `kvm` device node:
+
+    ```
+    ls /dev/kvm
+    ```
+
+  If not, enable virtualization in BIOS and check again.
+
+  - add your user to kvm group:
+
+    ```
+    usermod -a -G kvm <your-user-name>
+    ```
+
+   Visit [linux-kvm FAQ](https://www.linux-kvm.org/page/FAQ) for more informations.
+
 * `binfmt_misc` module loaded on the host machine:
 
 ```
