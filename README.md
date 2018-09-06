@@ -1,6 +1,22 @@
 Prerequisites
 -------------
 
+* enabled virtualization:
+
+  - check if you have `/dev/kvm` directory:
+
+    ```
+    ls /dev/kvm
+    ```
+
+  If not, enable virtualization in bios and check again.
+
+  - add your user to kvm group:
+
+    ```
+    usermod -a -G kvm <your-user-name>
+    ```
+
 * `binfmt_misc` module loaded on the host machine:
 
 ```
